@@ -1,0 +1,79 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	line-height: 1.5;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul,ol {
+	list-style-type: none;
+}
+p, label {
+	font-family: sans-serif;
+}
+.container-wrapper {
+	margin:7% auto;
+	position: relative;
+	width: 1000px;
+	overflow: hidden;
+}
+
+/* CSS Tab styling is start here */
+
+	/* Tab menu styling*/
+	input.tab-menu-radio {
+		display: none;
+	}
+	label.tab-menu {
+		display: inline-block;
+		float: left;
+		padding:10px 30px;
+		cursor: pointer;
+		z-index: 99;
+	}
+	/* End Tab menu styling*/
+
+	/* Tab content styling*/
+	
+	.tab-content {
+		top:-3px;
+		clear: both;
+		width: 100%;
+		position: relative;
+		padding:20px;
+		background-color: #f7f7f7;
+		border-top:7px solid #333;
+	}	
+	/* End Tab content styling*/
+
+	/* CSS tab core */
+		.tab-menu-radio:checked + label {
+			-webkit-transition:all 1s; /* Optional */
+			-moz-transition:all 1s; /* Optional */
+			transition:all 1s; /* Optional */
+			background-color: #333;
+			color: #fff;
+		}
+		.tab-content .tab {
+			height: 0;
+			opacity: 0;
+		}
+		#tab-menu1:checked ~ .tab-content .tab-1,
+		#tab-menu2:checked ~ .tab-content .tab-2,
+		#tab-menu3:checked ~ .tab-content .tab-3 {
+			-webkit-transition:opacity 1s; /* Optional */
+			-moz-transition:opacity 1s; /* Optional */
+			transition:opacity 1s; /* Optional */
+			height: auto;
+			opacity: 1;
+		}
+	/* End CSS tab core */
+
+/* CSS Tab Styling is end here */
