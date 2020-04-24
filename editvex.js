@@ -1,33 +1,3 @@
- //// EOS ////////////
-    var {
-	format,
-	api,
-	ecc,
-	json,
-	Fcbuffer
-    } = Eos.modules;
-    
-    chain = {
-	mainnet: 'f9f432b1851b5c179d2091a96f593aaed50ec7466b74f89301f957a83e56ce1f',
-	testnet: '038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca',
-	sysnet: 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f'
-    };
-    
-    /**
-       Other httpEndpoint's: https://www.eosdocs.io/resources/apiendpoints
-    */
-    eosconfig = {
-	///httpEndpoint: 'http://209.97.162.124:8800',
-	///chainId: chain.sysnet,
-	httpEndpoint: 'http://209.97.162.124:8080',
-	chainId: chain.mainnet,
-	broadcast: true,
-	keyProvider: "",
-	verbose: false,
-    };
-
-eos = Eos(eosconfig);
-
 ScatterJS.plugins( Vexanium() );
 var fromDappBrowser = navigator.userAgent=='VexWalletAndroid';
 var appname = document.title;
