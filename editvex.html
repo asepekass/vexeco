@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-	 <meta charset="utf-8">
+  
+  <head>
+<noscript>
+Mohon Aktifkan Javascript!
+</noscript>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=480, maximum-scale=1.0, target-densitydpi=device-dpi">
-	<title>Vex Ecosystem</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <title>VexSMS</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       
-<link href="css/bootstrap.min.css" rel="="stylesheet" type="text/css" />
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+    <!--Import Google Icon Font-->
     <style>
       /* fallback */
       
@@ -50,19 +55,19 @@
 	  margin-left: 40px;
       }
     </style>
-    
-  <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/CE1EEA42-99EB-6946-BB26-53922234B270/main.js" charset="UTF-8"></script>
-							  
+	  <link href="css/bootstrap.min.css" rel="="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
 <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/vex.min.js" type="text/javascript"></script>
 <script src="js/scatterjs-core.min.js" type="text/javascript"></script>
 <script src="js/scatterjs-plugin-vexjs.min.js" type="text/javascript"></script>
-<script src="js/pocket.vex.min.js" type="text/javascript"></script>  
-</head>
-<body>
-
-<div id="menuNav">
+<script src="js/pocket.vex.min.js" type="text/javascript"></script>    
+    
+  <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/CE1EEA42-99EB-6946-BB26-53922234B270/main.js" charset="UTF-8"></script></head>
+  
+  <body>
+    <div id="menuNav">
       <nav>
 	<div class="nav-wrapper">
 	  <a href="#!" class="brand-logo">VexSMS</a>
@@ -150,8 +155,7 @@
           <!--<button id="logn" class="btn btn-primary tog" name="action">Login Vexwallet PC/Android
             <i class="material-icons right">send</i>
           </button>-->
-<button id="login" class="btn btn-primary tog" name="action">Login
-          </button>	
+ <button id="login" class="btn btn-primary tog" name="action">Login Vexwallet PC</button>	
 <button id="logout" class="btn btn-danger tog d-none">Logout</button>
       </div>
 
@@ -508,11 +512,17 @@ return false;
 }
 document.onkeydown = redirectCU;
 </script>
-<script src="main.js" type="text/javascript"></script>
- <script src="https://cdn.jsdelivr.net/npm/vexaniumjs@16.0.9/lib/eos.min.js"></script>
-<script src="eosmsg.js"></script>
+<script src="editvex.js" type="text/javascript"></script>
+
 </body>
-<script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vexaniumjs@16.0.9/lib/eos.min.js"></script>
+<script src="eosmsg.js"></script>
+  
+  <script>
     $(document).ready(function() {
 	$('.sidenav').sidenav();
 	$('#addContactModal').modal();
@@ -2402,3 +2412,4 @@ reject(Error("Transfer Error"));
   </script>
   
 </html>
+
